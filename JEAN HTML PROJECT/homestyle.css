@@ -1,0 +1,100 @@
+/* Reset default margin and padding */
+body, h1, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply background image to the body */
+body {
+    background: url('bg1.jpg') no-repeat center bottom fixed;
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+    min-height: 100vh; /* Ensure the background covers the entire viewport height */
+    display: flex;
+    flex-direction: column; /* Place content in a column layout */
+}
+
+/* Style the navigation bar with a black background */
+header {
+    background: black;
+    width: 100%;
+    z-index: 1; /* Ensure it's on top of the background image */
+}
+
+/* Center the content in the header and space them evenly */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style the logo and navigation links */
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+    position: relative;
+    padding-bottom: 3px;
+    transition: border-bottom 0.3s;
+}
+
+nav a:hover {
+    border-bottom: 2px solid white;
+}
+
+/* Style the hero section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    flex: 1; /* Make the hero section occupy the available vertical space */
+}
+
+/* Style the left side with the round profile image */
+.left {
+    flex: 2;
+    display: flex;
+    align-items: flex-end; /* Align the content to the bottom */
+}
+
+.left img {
+    border-radius: 20%;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+/* Style the right side with your name, degree, and university */
+.right {
+    flex: 2;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* Additional styling for your name, degree, and university */
+.right h1 {
+    font-size: 36px;
+}
+
+.right h6 {
+    font-size: 24px;
+}
+
+.right p {
+    font-size: 18px;
+}

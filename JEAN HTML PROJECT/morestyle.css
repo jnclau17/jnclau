@@ -1,0 +1,82 @@
+/* Apply background image to the body */
+body {
+    background: url('bg4.jpg') no-repeat center bottom fixed;
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style the navigation bar with a black background */
+header {
+    background: black;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Center the content in the header and space them evenly */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+    position: relative;
+    padding-bottom: 3px;
+    transition: border-bottom 0.3s;
+}
+
+nav a:hover {
+    border-bottom: 2px solid white;
+}
+
+
+.card {
+  text-align: center;
+}
+
+.card h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.card p {
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  text-decoration: underline;
+  margin-top: 20px;
+}
+
+.card img {
+  width: 200px;
+  height: 150px;
+  margin: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+}
+
+video {
+  width: 320px;
+  height: 240px;
+  margin-top: 20px;
+}

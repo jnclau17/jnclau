@@ -1,0 +1,80 @@
+/* Reset default margin and padding */
+body, h1, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply background image to the body */
+body {
+    background: url('bg3.jpg') no-repeat center bottom fixed;
+    background-size: cover;
+    color: white;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style the navigation bar with a black background */
+header {
+    background: black;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Center the content in the header and space them evenly */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+    position: relative;
+    padding-bottom: 3px;
+    transition: border-bottom 0.3s;
+}
+
+nav a:hover {
+    border-bottom: 2px solid white;
+}
+
+
+.contact-container {
+  background-color: rgba(255, 255, 255, 0.5); /* Transparent white background for the entire container */
+  padding: 10px; /* Add some padding to the container */
+  border-radius: 10px; /* Add rounded corners with a 10px radius */
+  text-align: left; /* Align the text to the left side of the container */
+  position: absolute; /* Position the container absolutely within its parent */
+  center: 0; /* Align the container to the bottom */
+  left: 0; /* Align the container to the left side of the webpage */
+}
+
+
+.contact-info {
+  font-weight: bold; /* Make the text bold */
+  font-size: 24px; /* Increase the font size as needed */
+  margin: 0; /* Remove any default margin */
+}
+
+/* Style for other contact information */
+.contact-container p {
+  margin: 5px 0; /* Add margin to separate contact information */
+color: black;
+}
